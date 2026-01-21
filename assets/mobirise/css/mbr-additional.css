@@ -21,12 +21,12 @@ body {
 }
 .display-1 {
   font-family: 'Rethink Sans', sans-serif;
-  font-size: 6.63rem;
+  font-size: 4.4rem;
   line-height: .8;
   letter-spacing: -0.04em;
 }
 .display-1 > .mbr-iconfont {
-  font-size: 8.2875rem;
+  font-size: 5.5rem;
 }
 .display-2 {
   font-family: 'Rethink Sans', sans-serif;
@@ -69,14 +69,14 @@ body {
 /* 0.65 - min scale variable, may vary */
 @media (max-width: 992px) {
   .display-1 {
-    font-size: 5.304rem;
+    font-size: 3.52rem;
   }
 }
 @media (max-width: 768px) {
   .display-1 {
-    font-size: 4.641rem;
-    font-size: calc( 2.9705rem + (6.63 - 2.9705) * ((100vw - 20rem) / (48 - 20)));
-    line-height: calc( 1.1 * (2.9705rem + (6.63 - 2.9705) * ((100vw - 20rem) / (48 - 20))));
+    font-size: 3.08rem;
+    font-size: calc( 2.19rem + (4.4 - 2.19) * ((100vw - 20rem) / (48 - 20)));
+    line-height: calc( 1.1 * (2.19rem + (4.4 - 2.19) * ((100vw - 20rem) / (48 - 20))));
   }
   .display-2 {
     font-size: 4.504rem;
@@ -2847,7 +2847,7 @@ img {
 .cid-u6kyx6blOo {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #0f4229;
+  background-color: #4f4521;
 }
 .cid-u6kyx6blOo .mbr-fallback-image.disabled {
   display: none;
