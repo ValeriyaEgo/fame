@@ -37,7 +37,8 @@
         "#0f4229",
         "#b8860b",
         "#b08d57",
-        "#4f4521"
+        "#4f4521",
+        "#312911"
       ]
     },
     "path": "@PROJECT_PATH@",
@@ -986,7 +987,7 @@
               }
             },
             ".mbr-section-title": {
-              "color": "#000000"
+              "color": "#312911"
             },
             ".mbr-section-subtitle": {
               "color": "#000000"
@@ -1268,7 +1269,7 @@
               "text-align": "center"
             },
             ".mbr-section-title, .icon-wrapper": {
-              "color": "#000000"
+              "color": "#312911"
             }
           },
           "_name": "slider05",
@@ -1487,7 +1488,7 @@
               "color": "#4e423d"
             },
             "H5": {
-              "color": "#000000"
+              "color": "#312911"
             },
             ".alert-success": {
               "background-color": "#f0f0f0 !important",
@@ -1687,6 +1688,9 @@
             },
             ".panel-text": {
               "color": "#000000"
+            },
+            ".mbr-section-title, .mbr-section-btn": {
+              "color": "#312911"
             }
           },
           "_name": "list02",
@@ -2035,7 +2039,7 @@
               "text-align": "center"
             },
             ".mbr-section-title": {
-              "color": "#000000",
+              "color": "#312911",
               "text-align": "center"
             },
             ".mbr-section-subtitle, .subtitle-wrapper": {
@@ -2360,6 +2364,9 @@
             },
             ".mbr-section-btn": {
               "text-align": "center"
+            },
+            ".mbr-title, .mbr-section-btn": {
+              "color": "#312911"
             }
           },
           "_name": "form01",
