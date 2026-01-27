@@ -46,7 +46,7 @@ body {
   font-size: 1.40625rem;
 }
 .display-5 {
-  font-family: 'Instrument Serif', serif;
+  font-family: 'Rethink Sans', sans-serif;
   font-size: 1.6rem;
   line-height: 1;
 }
@@ -1983,6 +1983,10 @@ img {
 }
 .cid-u6kyrNl3y4 .item-desc {
   color: #000000;
+}
+.cid-u6kyrNl3y4 .item-title,
+.cid-u6kyrNl3y4 .mbr-section-btn {
+  color: #312911;
 }
 .cid-v3uGNBZ3d2 {
   padding-top: 0rem;
