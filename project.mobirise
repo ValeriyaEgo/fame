@@ -92,12 +92,12 @@
       "settings": {
         "main": true,
         "title": "FAme Studio",
-        "meta_descr": "As the official representative of world-renowned furniture and lighting manufacturers in Europe, we connect factories with local distributors, designers, and retailers through personalized support and deep industry expertise.",
+        "meta_descr": "FAmeStudioAgency represents Francesco Molon and United Alabaster, connecting premium European furniture and lighting manufacturers with distributors, designers, and retailers.",
         "header_custom": "",
         "footer_custom": "",
         "html_before": "",
         "socialSharingUrl": "",
-        "meta_image": "@PROJECT_PATH@/assets/images/il_1588xn.4497568671_r6va.webp"
+        "meta_image": "@PROJECT_PATH@/assets/images/250409_molon_salone_25_0146-1-2000x1372.jpg"
       },
       "components": [
         {
