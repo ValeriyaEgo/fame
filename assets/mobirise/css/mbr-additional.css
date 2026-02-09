@@ -1878,6 +1878,10 @@ img {
 .cid-u6kyDEioZ3 .icon-wrapper {
   color: #312911;
 }
+.cid-u6kyDEioZ3 .mbr-text,
+.cid-u6kyDEioZ3 .text-wrapper {
+  text-align: justify;
+}
 .cid-u6kyrNl3y4 {
   padding-top: 0rem;
   padding-bottom: 5rem;

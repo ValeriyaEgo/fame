@@ -1275,6 +1275,9 @@
             },
             ".mbr-section-title, .icon-wrapper": {
               "color": "#312911"
+            },
+            ".mbr-text, .text-wrapper": {
+              "text-align": "justify"
             }
           },
           "_name": "slider05",
