@@ -1665,6 +1665,10 @@ img {
 .cid-u6kyt2VTxr .mbr-text {
   color: #000000;
 }
+.cid-u6kyt2VTxr .mbr-text,
+.cid-u6kyt2VTxr .mbr-section-btn {
+  text-align: justify;
+}
 .cid-u6kyvn8mjq {
   background-image: url("../../../assets/images/250409-molon-salone-25-170-2000x2889.jpeg");
 }
