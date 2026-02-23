@@ -93,7 +93,7 @@
         "main": true,
         "title": "FAmeStudioAgency",
         "meta_descr": "FAmeStudioAgency represents Francesco Molon and United Alabaster, connecting premium European furniture and lighting manufacturers with distributors, designers, and retailers.",
-        "header_custom": "",
+        "header_custom": "<!-- Google tag (gtag.js) --> <script async src=\"https://www.googletagmanager.com/gtag/js?id=G-28D7CC09G1\"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-28D7CC09G1'); </script>",
         "footer_custom": "",
         "html_before": "",
         "socialSharingUrl": "",
