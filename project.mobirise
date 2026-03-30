@@ -60,7 +60,7 @@
     "mcSmartCart": {
       "currency": "USD"
     },
-    "uniqCompNum": 51,
+    "uniqCompNum": 53,
     "versionPublish": "6.1.12",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/fame-studio-2-128x128.png",
@@ -1855,6 +1855,86 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".content-wrapper": {
+              ".title-wrapper": {
+                ".mbr-section-title": {
+                  "margin-bottom": "30px",
+                  "@media (max-width: 992px)": {
+                    "margin-bottom": "20px"
+                  }
+                }
+              },
+              ".mbr-text": {
+                "margin-bottom": "0"
+              },
+              ".mbr-section-btn": {
+                "margin-top": "20px",
+                "margin-bottom": "-9.6px",
+                "@media (max-width: 992px)": {
+                  "margin-top": "10px"
+                }
+              }
+            },
+            ".image-wrapper": {
+              "text-align": "center",
+              "@media (max-width: 992px)": {
+                "margin-top": "30px"
+              },
+              "img": {
+                "display": "inline-flex",
+                "width": "100%",
+                "height": "400px",
+                "object-fit": "cover",
+                "& when (@showBorder)": {
+                  "border": "8px solid @border"
+                }
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#3a353e"
+            },
+            ".mbr-text": {
+              "color": "#3a353e"
+            }
+          },
+          "_name": "article03",
+          "_sourceTheme": "fantasym5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article01 fantasym5\" group=\"Article\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverseContent\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Border\" name=\"showBorder\" checked>\n        <input type=\"color\" title=\"Border Color\" value=\"#b08d57\" name=\"border\" condition=\"showBorder\" selected>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/fantasym5/components/_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/fantasym5/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-lg-11\">\n                <div class=\"content-wrapper\">\n                    <div class=\"row content-wrap justify-content-between\" mbr-class=\"{'flex-row-reverse' : reverseContent}\">\n                        <div class=\"col-12 col-lg-6 card\">\n                            <div class=\"title-wrapper\">\n                                <h2 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title, .mbr-section-btn\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\"><b>Salone del Mobile Milano 2026</b></h2>\n                            </div>\n                            <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .text-wrap\">From April 21–26, we invite you to Fiera Milano for one of the world’s most prestigious events in furniture and interior design. Discover exclusive collections, cutting-edge trends, and innovative solutions from leading global brands.<br><br>Join us at the Francesco Molon stand to experience timeless Italian craftsmanship and refined design.<br><br>Visit us at Hall 15, Stand B21.</p>\n                            <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-warning\" href=\"index.html#form01-1\" data-app-placeholder=\"Type Text\">JOIN US</a></div>\n                        </div>\n                        <div class=\"col-12 col-lg-5 card\">\n                            <div class=\"image-wrapper\">\n                                <img class=\"large-radius\" src=\"@PROJECT_PATH@/assets/images/neutral-minimalist-social-media-tips-carousel-instagram-post-2-912x1140.jpg\" alt=\"Salone del Mobile Milano\">\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "vflYW1e2Jv",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "article03-1g"
         },
         {
           "alias": false,
